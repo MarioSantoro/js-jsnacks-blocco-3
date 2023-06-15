@@ -1,8 +1,10 @@
 <template>
-    <ul>
-        <li v-for="list in List">{{ list.text }}
-        </li>
-    </ul>
+    <header>
+        <ul>
+            <li v-for="list in List">{{ list.text }}
+            </li>
+        </ul>
+    </header>
 </template>
 
 
@@ -37,4 +39,16 @@ export default {
 <style lang="scss">
 @import "../styles/partials/mixins";
 @import "../styles/partials/variables";
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+}
 </style>
