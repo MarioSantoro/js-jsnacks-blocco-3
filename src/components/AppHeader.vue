@@ -37,8 +37,8 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "../styles/partials/mixins";
-@import "../styles/partials/variables";
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
 
 header {
     display: flex;
