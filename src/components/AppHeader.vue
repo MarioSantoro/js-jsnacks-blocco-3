@@ -1,16 +1,37 @@
 <template>
     <ul>
-        <li>Home</li>
-        <li>Chi Siamo</li>
-        <li>Contatti</li>
-        <li>Lets'gooo</li>
+        <li v-for="list in List">{{ list.text }}
+        </li>
     </ul>
 </template>
 
 
 <script>
 export default {
-
+    data() {
+        return {
+            List: [
+                {
+                    text: "Home"
+                },
+                {
+                    text: "Chi siamo"
+                },
+                {
+                    text: "Prodotti"
+                },
+                {
+                    text: "Suona"
+                },
+                {
+                    text: "Forza"
+                },
+                {
+                    text: "Liguria"
+                }
+            ]
+        }
+    }
 }
 </script>
 <style lang="scss">
