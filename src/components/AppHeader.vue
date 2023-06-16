@@ -1,7 +1,8 @@
 <template>
     <header>
         <ul>
-            <li v-for="list in List">{{ list.text }}
+            <li v-for="list in List">
+                <NavLink :links=list.text />
             </li>
         </ul>
     </header>
@@ -9,6 +10,7 @@
 
 
 <script>
+import NavLink from "./NavLink.vue"
 export default {
     data() {
         return {
@@ -33,6 +35,9 @@ export default {
                 }
             ]
         }
+    },
+    components: {
+        NavLink,
     }
 }
 </script>
